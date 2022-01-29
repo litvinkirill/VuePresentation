@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Vue.js</h1>
+          <img
+            src="https://vuejs.org/images/logo.svg"
+            alt="Vue-logo"
+            width="300px"
+            height="300px"
+          />
+          <p>
+            <small>Created by Kirill Litvin</small>
+          </p>
+        </section>
+        <section>
+          <section>
+            <h2>History</h2>
+          </section>
+          <section>
+            <ul>
+              <li>
+                <figure style="display: flex; flex-direction: row; text-align: center; text-align: center;">
+                  <img width="200px" src="https://avatars.githubusercontent.com/u/499550?v=4" alt="Photo Evan You">
+                  <figcaption>Vue.js was created originally by a single person, Evan You in July 2013</figcaption>
+                </figure>
+              </li>
+              <li>Five years later, Vue.js is the third project on Github in number of stars</li>
+            </ul>
+          </section>
+          <section>
+            <h4>History</h4>
+            <section>
+              <ul>
+                <li>Started in late 2013</li>
+                <li>First release Feb. 2014 (v0.6)</li>
+                <li>v1.0.0 Evangelion Oct. 2015</li>
+                <li>v2.0 Ghost in the Shell Sept 2016</li>
+                <li>v3.0 One Piece Sept 2020</li>
+                <li>Latest release v3.2 Aug 2021</li>
+              </ul>
+            </section>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Popularity</h2>
+          </section>
+          <section>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--eK2JV48b--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ilskiqfcr23v52hleqwx.jpg" alt="Popularity">
+          </section>
+          <section>
+            <ul>
+              <li>Vue.js has broken records in terms of popularity since 2015</li>
+              <li>Secret of success is a focus on simplicity, a very low learning curve, an excellent documentation and a listening community</li>
+            </ul>
+          </section>
+          <section>
+            <h6>developers favorite</h6>
+            <img src="https://merehead.com/blog/wp-content/uploads/2-200.png" alt="popularity">
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>ADVANTAGES</h2>
+          </section>
+          <section>
+            <ul>
+              <li>Very Small Size</li>
+              <li>Easy to Understand and Develop Applications</li>
+              <li>Simple Integration</li>
+              <li>Detailed Documentation</li>
+              <li>Flexibility</li>
+              <li>Right to choose</li>
+            </ul>
+          </section>
+          <section>
+            <h4>Very small size</h4>
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Size</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Vue.js</th>
+                  <td>23.8 kB (gzipped)</td>
+                </tr>
+                <tr>
+                  <th scope="row">jquery</th>
+                  <td>31.1 kB (gzipped)</td>
+                </tr>
+                <tr>
+                  <th scope="row">React + react-dom</th>
+                  <td>34.4 kB (gzipped)</td>
+                </tr>
+                <tr>
+                  <th scope="row">Angular</th>
+                  <td>62.2 kB (gzipped)</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section>
+            <h4>Easy to Understand and Develop Applications</h4>
+            <div style="display: flex;">
+              <pre style="width: 50%;">
+                <code class="javascript" data-trim contenteditable style="font-size: 20px; font-weight: bold;">
+                  <template>
+                    <div class="example">{{ msg }}</div>
+                  </template>
+                
+                  <script>
+                    export default {
+                        data () {
+                            return {
+                                msg: 'Hello world!'
+                            }
+                        }
+                    }
+                  </script>
+                </code>
+              </pre>
+              <img style="height: 100%;" src="./examples/assets/hello.jpg" alt="hello">
+            </div>
+          </section>
+          <section>
+            <h4>Simple Integration</h4>
+            <ul>
+              <li>tag script (Vue.js runtime)</li>
+              <li>webpack</li>
+              <li>web components</li>
+              <li>browserify</li>
+              <li>requirejs</li>
+            </ul>
+          </section>
+          <section>
+            <h4>Detailed Documentation</h4>
+            <h6><a href="https://vuejs.org/">The official site Vue.js</a></h6>
+          </section>
+          <section>
+            <h4>Flexibility</h4>
+            <ul>
+              <li>Write your template in an HTML file</li>
+              <li>Write your template in a string in a Javascript file</li>
+              <li>Use JSX in a Javascript file</li>
+              <li>Make your template in pure Javascript using virtual nodes</li>
+            </ul>
+            <p>This flexibility makes it easy to switch to Vue because React developers, Angular developers, or developers new to JS frameworks would all find Vue’s design familiar.</p>
+          </section>
+          <section>
+            <h4>Right to choose</h4>
+            <ul>
+              <li>Template
+                <ol>html binding</ol>
+                <ol>jsx</ol>
+                <ol>jade</ol>
+              </li>
+              <li>Component class
+                <ol>es5</ol>
+                <ol>es6 / es7</ol>
+                <ol>es6 + flow</ol>
+                <ol>TypeScript</ol>
+              </li>
+            </ul>
+          </section>       
+          <section>
+            <h2>Comparison between the frameworks</h2>
+          </section>
+          <section>
+            <img src="https://worldline.github.io/vuejs-training/assets/img/react-vue-angular.63116975.jpg" alt="frameworks">
+            <ul>
+              <li>React is defined as a library, independent of the technical stack</li>
+              <li>Vue is defined as a progressive framework, versatile and incrementally adoptable</li>
+              <li>Angular is defined as the one framework for all needs, desktop and mobile</li>
+            </ul>
+          </section>
+          <section>
+            <img width="100%" src="./examples/assets/comparsion.jpg" alt="Comparison between the frameworks">
+          </section>
+
+        </section>
+        <section>
+          <section>
+            <h2>What is Vue.js?</h2>
+          </section>
+          <section>
+            <ul>
+              <li>Vue is a progressive framework for building user interfaces</li>
+              <li>The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects</li>
+              <li>On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications</li>
+            </ul>
+          </section>
+          <section>
+            <h4>Single File Components *.vue</h4>
+            <img style="width: 38%;" src="./examples/assets/exampleFile.jpg" alt="*.vue">
+          </section>
+          <section>
+            <h4>Work with components</h4>
+            <img style="width: 100%;" src="./examples/assets/components.jpg" alt="sin file Components">
+          </section>
+          <section>
+            <h4>PROJECT STRUCTURE</h4>
+            <img src="./examples/assets/project.jpg" alt="STRUCTURE">
+          </section>
+          <section>
+            <h4>Reactive data binding</h4>
+            <img width="100%" src="./examples/assets/reactive.jpg" alt="Reactive data binding">
+          </section>
+          <section>
+            <h4>Vue Reactivity System</h4>
+            <img src="./examples/assets/system.jpg" alt="system">
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Directives</h2>
+          </section>
+          <section>
+            <h5>The directives are the Vue-specific syntax elements that can be used in component templates</h5>
+          </section>
+          <section>
+            <h6>v-bind: Bind properties</h6>
+            <pre>
+              <code class="javascript" data-trim contenteditable style="width: 100%; font-size: 20px; font-weight: bold;">
+                <template>
+                  <button v-bind:disabled="isButtonDisabled">I'm disabled</button>
+                  <button v-bind:disabled="!isButtonDisabled">I'm enabled</button>
+                </template>
+                                                
+                <script>
+                  export default {
+                    data() {
+                      return {
+                        isButtonDisabled: true
+                      }
+                    }
+                  }
+                </script>                
+              </code>
+            </pre>
+            <img style="width: 45%;" src="./examples/assets/buttons.jpg" alt="buttons">
+          </section>
+          <section>
+            <h6>v-model</h6>
+            <div style="display: flex;">
+              <pre style="height: 416px; margin-left: 10px; margin-right: 10px; width: 40%;">
+                <code class="javascript" data-trim contenteditable style="width: 100%; font-size: 20px; font-weight: bold;">
+                  <template>
+                    <label>What is your name ?
+                      <input v-model="name">
+                    </label>
+                    <p>Hello {{ name }} !</p>
+                  </template>                     
+                  <script>
+                    export default {
+                      data() {
+                        return {
+                          name: ''
+                        }
+                      }
+                    }
+                  </script>               
+                </code>
+              </pre>
+              <div style="display: flex; flex-direction: column; margin-left: 10px;">
+                <img src="./examples/assets/example1.jpg" alt="example1">
+                <img src="./examples/assets/example2.jpg" alt="example1">
+              </div>
+            </div>
+          </section>
+          <section>
+            <h6>V-ON, V-IF, V-ELSE</h6>
+            <div style="display: flex;">
+              <pre style="height: 472px;
+              margin-left: 10px;
+              margin-right: 10px;
+              width: 53%;">
+                <code class="javascript" data-trim contenteditable style="width: 100%; font-size: 20px; font-weight: bold;">
+                  <template>
+                    <button v-on:click="isAwesome=!isAwesome">
+                      Toggle
+                    </button>
+                    <h1 v-if="isAwesome">Vue is awesome!</h1>
+                    <h1 v-else="">Oh no 😢</h1>
+                  </template>
+                                              
+                  <script>
+                    export default {
+                      data() {
+                        return {
+                          isAwesome: true
+                        }
+                      }
+                    }
+                  </script>              
+                </code>
+              </pre>
+              <div style="display: flex; flex-direction: column; margin-left: 10px;">
+                <img src="https://rolling-scopes-school.github.io/liliyavoloshina-JSFE2021Q3/presentation/img/conditional.gif" alt="example2">
+              </div>
+            </div>
+          </section>
+          <section>
+            <h6>v-for</h6>
+            <div style="display: flex;">
+              <pre style="height: 500px;
+              margin-left: 10px;
+              margin-right: 10px;
+              width: 60%;">
+                <code class="javascript" data-trim contenteditable style="width: 100%; font-size: 20px; font-weight: bold;">
+                  <template>
+                    <ol>
+                      <li v-for="item in groceryList">
+                        {{ item.text }}
+                      </li>
+                    </ol>
+                  </template>                     
+                  <script>
+                    export default {
+                      data() {
+                        groceryList: [
+                          { id: 0, text: 'Овощи' },
+                          { id: 1, text: 'Сыр' },
+                          { id: 2, text: 'Что там ещё люди едят?' }
+                        ]
+                      }
+                    }
+                  </script>               
+                </code>
+              </pre>
+              <div style="display: flex; flex-direction: column; margin-left: 10px;">
+                <img src="./examples/assets/example3.jpg" alt="example1">
+              </div>
+            </div>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h4>Summary</h4>
+          </section>
+          <section>
+            <p>Vue.js has become a revelation in recent years</p>
+            <p>After Vue.js began to show its features, many market giants paid attention to it</p>
+            <p>Today the framework is in great demand in the Asian market</p>
+          </section>
+          <section>
+            <h5>When would Vue.js be the preferred choice?</h5>
+            <ul>
+              <li>to develop "smart" and high-performance applications</li>
+              <li>for early release of the application to the market</li>
+              <li>building small and lightweight apps</li>
+            </ul>
+          </section>
+
+
+        </section>
+        <section>
+          <h2>THANKS FOR ATTENTION!</h2>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
